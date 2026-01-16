@@ -2,10 +2,14 @@
 
 **Live URL:** [https://pkinnovate.github.io/Portfolio-Prakash/](https://pkinnovate.github.io/Portfolio-Prakash/)
 
-A production-grade, multi-page personal website portfolio for Prakash, a visionary researcher, founder, and CEO.
+A world-class, production-grade portfolio for Prakash, featuring a **Visionary Aesthetic** with mesh gradients, bento-box layouts, and magnetic micro-interactions.
 
-## 🚀 Purpose
-Positioning Prakash at the intersection of research, technology, innovation, and entrepreneurship. This platform serves as a digital headquarters to build credibility and attract collaborators, investors, and partners.
+## 🚀 Key Features (Visionary Overhaul)
+- **Animated Mesh Gradient**: Immersive background depth in the hero section.
+- **Bento Box Layout**: Advanced asymmetric grid for venture showcases.
+- **Magnetic UI**: Interactive buttons that react to mouse focus.
+- **Cursor Glow**: A guided light effect for high-end engagement.
+- **Staggered Animations**: Sequential content reveals for premium pacing.
 
 ## 📁 Project Structure (Production Architecture)
 The project follows a modular, industry-standard architecture designed for organizational collaboration and scalability.
