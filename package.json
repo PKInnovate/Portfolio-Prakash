@@ -1,0 +1,12 @@
+{
+  "name": "prakash-portfolio",
+  "version": "1.0.0",
+  "description": "Professional portfolio for Prakash - Researcher, Founder, and CEO.",
+  "main": "index.html",
+  "scripts": {
+    "dev": "npx browser-sync start --server --files \"css/*.css, js/*.js, *.html\"",
+    "start": "start index.html"
+  },
+  "author": "Prakash",
+  "license": "MIT"
+}
