@@ -56,11 +56,12 @@
 .btn-primary {
     background-color: var(--accent-color);
     color: white;
-    border: 1px solid var(--accent-color);
+    border: none;
     box-shadow: 0 4px 14px 0 var(--accent-glow);
 }
 
 .btn-primary:hover {
+    background-color: #2563eb;
     transform: translateY(-2px);
     box-shadow: 0 6px 20px 0 var(--accent-glow);
 }
@@ -72,22 +73,27 @@
 }
 
 .btn-secondary:hover {
-    background-color: var(--border-color);
+    background-color: rgba(255, 255, 255, 0.05);
+    border-color: var(--text-color);
+    transform: translateY(-2px);
 }
 
 /* Cards & Items */
 .research-item,
 .card-item {
     padding: 3rem;
-    background: var(--secondary-bg);
+    background: rgba(26, 26, 26, 0.3);
     border: 1px solid var(--border-color);
-    border-radius: 8px;
+    border-radius: 12px;
+    backdrop-filter: blur(5px);
     transition: var(--transition);
 }
 
-.research-item:hover {
-    border-color: var(--accent-color);
-    transform: translateY(-5px);
+.research-item:hover,
+.card-item:hover {
+    transform: translateY(-8px);
+    border-color: rgba(59, 130, 246, 0.5);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
 }
 
 .card-tag {

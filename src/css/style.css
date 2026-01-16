@@ -36,7 +36,11 @@ h4 {
 }
 
 .accent {
-    color: var(--accent-color);
+    background: linear-gradient(135deg, var(--accent-color), #60a5fa);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: 800;
 }
 
 /* Hero Section */
@@ -47,6 +51,7 @@ h4 {
     justify-content: center;
     text-align: center;
     padding-top: 80px;
+    background: radial-gradient(circle at 50% 50%, rgba(59, 130, 246, 0.08) 0%, transparent 70%);
 }
 
 .hero-content h1 {
@@ -116,24 +121,37 @@ h4 {
 }
 
 .stat-item {
-    padding: 2rem;
-    background: var(--bg-color);
+    padding: 2.5rem;
+    background: rgba(26, 26, 26, 0.4);
     border: 1px solid var(--border-color);
-    border-radius: 8px;
+    border-radius: 12px;
+    backdrop-filter: blur(10px);
+    transition: var(--transition);
+}
+
+.stat-item:hover {
+    border-color: var(--accent-color);
+    transform: translateY(-5px);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
 }
 
 .stat-number {
     display: block;
-    font-size: 2rem;
+    font-size: 2.5rem;
     font-weight: 800;
-    color: var(--accent-color);
+    background: linear-gradient(135deg, var(--accent-color), #60a5fa);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
     font-family: var(--font-heading);
+    margin-bottom: 0.5rem;
 }
 
 .stat-label {
     text-transform: uppercase;
-    font-size: 0.8rem;
-    letter-spacing: 1px;
+    font-size: 0.85rem;
+    letter-spacing: 2px;
+    font-weight: 600;
     color: var(--text-dim);
 }
 
