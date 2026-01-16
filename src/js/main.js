@@ -1,7 +1,13 @@
-import { initAnimations, initNavbar, renderVentures } from './ui.js';
+import { initAnimations, initNavbar, renderVentures, initMagneticButtons, initCursorGlow } from './ui.js';
 
 document.addEventListener('DOMContentLoaded', () => {
-    // 1. Page-specific initialization
+    // 1. Initialize Core Behaviors
+    initCursorGlow();
+    initNavbar();
+    initAnimations();
+    initMagneticButtons();
+
+    // 2. Page-specific initialization
     const path = window.location.pathname;
     const page = path.split("/").pop() || 'index.html';
 
@@ -12,9 +18,6 @@ document.addEventListener('DOMContentLoaded', () => {
         renderVentures(); // Full list
     }
 
-    // 3. Initialize UI behaviors
-    initNavbar();
-    initAnimations();
 
     // 4. Form Handling (only on contact page or home if present)
     const contactForm = document.getElementById('contact-form');

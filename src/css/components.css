@@ -43,27 +43,27 @@
 
 /* Buttons */
 .btn {
-    padding: 1rem 2.5rem;
-    border-radius: 4px;
+    padding: 1.1rem 2.8rem;
+    border-radius: 8px;
     font-weight: 600;
     text-decoration: none;
     font-size: 0.95rem;
     transition: var(--transition);
     cursor: pointer;
     display: inline-block;
+    letter-spacing: 0.5px;
 }
 
 .btn-primary {
-    background-color: var(--accent-color);
+    background: linear-gradient(135deg, var(--accent-color), var(--accent-secondary));
     color: white;
     border: none;
-    box-shadow: 0 4px 14px 0 var(--accent-glow);
+    box-shadow: 0 10px 20px -5px var(--accent-glow);
 }
 
 .btn-primary:hover {
-    background-color: #2563eb;
-    transform: translateY(-2px);
-    box-shadow: 0 6px 20px 0 var(--accent-glow);
+    transform: translateY(-3px);
+    box-shadow: 0 15px 30px -5px var(--accent-glow);
 }
 
 .btn-secondary {
@@ -73,33 +73,35 @@
 }
 
 .btn-secondary:hover {
-    background-color: rgba(255, 255, 255, 0.05);
-    border-color: var(--text-color);
-    transform: translateY(-2px);
+    background: rgba(255, 255, 255, 0.03);
+    border-color: rgba(255, 255, 255, 0.3);
+    transform: translateY(-3px);
 }
 
 /* Cards & Items */
 .research-item,
 .card-item {
-    padding: 3rem;
-    background: rgba(26, 26, 26, 0.3);
+    padding: 3.5rem;
+    background: var(--card-bg);
     border: 1px solid var(--border-color);
-    border-radius: 12px;
-    backdrop-filter: blur(5px);
+    border-radius: 20px;
+    backdrop-filter: blur(15px);
+    -webkit-backdrop-filter: blur(15px);
     transition: var(--transition);
 }
 
 .research-item:hover,
 .card-item:hover {
-    transform: translateY(-8px);
-    border-color: rgba(59, 130, 246, 0.5);
-    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
+    transform: translateY(-10px);
+    border-color: rgba(255, 255, 255, 0.2);
+    box-shadow: var(--shadow-premium);
 }
 
 .card-tag {
-    font-size: 0.8rem;
+    font-size: 0.75rem;
     text-transform: uppercase;
     color: var(--accent-color);
-    margin-bottom: 0.5rem;
-    letter-spacing: 1px;
+    margin-bottom: 0.75rem;
+    letter-spacing: 2px;
+    font-weight: 700;
 }

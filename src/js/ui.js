@@ -20,9 +20,35 @@ export function initAnimations() {
 
     document.querySelectorAll('.section, .research-item, .card-item').forEach(el => {
         el.style.opacity = '0';
-        el.style.transform = 'translateY(30px)';
-        el.style.transition = 'all 0.8s cubic-bezier(0.16, 1, 0.3, 1)';
+        el.style.transform = 'translateY(40px)';
+        el.style.transition = 'all 1s cubic-bezier(0.16, 1, 0.3, 1)';
         observer.observe(el);
+    });
+}
+
+export function initMagneticButtons() {
+    const btns = document.querySelectorAll('.btn-primary');
+    btns.forEach(btn => {
+        btn.addEventListener('mousemove', (e) => {
+            const rect = btn.getBoundingClientRect();
+            const x = e.clientX - rect.left - rect.width / 2;
+            const y = e.clientY - rect.top - rect.height / 2;
+            btn.style.transform = `translate(${x * 0.2}px, ${y * 0.2}px)`;
+        });
+        btn.addEventListener('mouseleave', () => {
+            btn.style.transform = `translate(0px, 0px)`;
+        });
+    });
+}
+
+export function initCursorGlow() {
+    const glow = document.createElement('div');
+    glow.className = 'cursor-glow';
+    document.body.appendChild(glow);
+
+    window.addEventListener('mousemove', (e) => {
+        glow.style.left = e.clientX + 'px';
+        glow.style.top = e.clientY + 'px';
     });
 }
 
@@ -46,9 +72,10 @@ export function renderVentures(count = null) {
     if (venturesGrid) {
         venturesGrid.innerHTML = ''; // Clear previous
         const itemsToRender = count ? ventures.slice(0, count) : ventures;
-        itemsToRender.forEach(v => {
+        itemsToRender.forEach((v, index) => {
             const card = document.createElement('div');
-            card.className = 'research-item fade-in';
+            card.className = 'card-item fade-in';
+            card.style.animationDelay = `${index * 0.1}s`;
             card.innerHTML = `
                 <div class="card-tag">Venture</div>
                 <h3>${v.title}</h3>
