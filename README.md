@@ -1,5 +1,7 @@
 # Portfolio - Prakash
 
+**Live URL:** [https://pkinnovate.github.io/Portfolio-Prakash/](https://pkinnovate.github.io/Portfolio-Prakash/)
+
 A modern, high-impact personal website portfolio for Prakash, a visionary researcher, founder, and CEO.
 
 ## 🚀 Purpose
