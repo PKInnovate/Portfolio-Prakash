@@ -4,8 +4,8 @@
   "description": "Professional portfolio for Prakash - Researcher, Founder, and CEO.",
   "main": "index.html",
   "scripts": {
-    "dev": "npx browser-sync start --server --files \"css/*.css, js/*.js, *.html\"",
-    "start": "start index.html"
+    "dev": "npx browser-sync start --server 'src' --files \"src/css/*.css, src/js/*.js, src/*.html\"",
+    "start": "start src/index.html"
   },
   "author": "Prakash",
   "license": "MIT"

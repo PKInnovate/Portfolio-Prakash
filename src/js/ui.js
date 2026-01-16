@@ -41,10 +41,12 @@ export function initNavbar() {
     });
 }
 
-export function renderVentures() {
+export function renderVentures(count = null) {
     const venturesGrid = document.querySelector('.card-grid');
     if (venturesGrid) {
-        ventures.forEach(v => {
+        venturesGrid.innerHTML = ''; // Clear previous
+        const itemsToRender = count ? ventures.slice(0, count) : ventures;
+        itemsToRender.forEach(v => {
             const card = document.createElement('div');
             card.className = 'research-item fade-in';
             card.innerHTML = `
