@@ -1,12 +1,7 @@
 import { initAnimations, initNavbar, renderVentures } from './ui.js';
-import { injectHeader, injectFooter } from './components.js';
 
 document.addEventListener('DOMContentLoaded', () => {
-    // 1. Inject shared components
-    injectHeader();
-    injectFooter();
-
-    // 2. Page-specific initialization
+    // 1. Page-specific initialization
     const path = window.location.pathname;
     const page = path.split("/").pop() || 'index.html';
 
