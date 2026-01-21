@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ventures | Prakash - Visionary Leader</title>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/components.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
@@ -17,17 +18,44 @@
     <nav id="navbar">
         <div class="container">
             <div class="logo"><a href="index.html" style="text-decoration: none; color: inherit;">PRAKASH</a></div>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
             <ul class="nav-links">
                 <li><a href="index.html">Home</a></li>
                 <li><a href="about.html">About</a></li>
                 <li><a href="ventures.html">Ventures</a></li>
                 <li><a href="research.html">Research</a></li>
+                <li><a href="education.html">Education</a></li>
+                <li><a href="insights.html">Insights</a></li>
                 <li><a href="contact.html">Contact</a></li>
             </ul>
         </div>
     </nav>
+
+    <!-- Mobile Navigation Overlay -->
+    <div class="mobile-nav-overlay">
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="ventures.html">Ventures</a></li>
+            <li><a href="research.html">Research</a></li>
+            <li><a href="education.html">Education</a></li>
+            <li><a href="insights.html">Insights</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </div>
     <main>
-        <section class="section" style="padding-top: 15rem;">
+        <section class="section" style="padding-top: 15rem; position: relative;">
+            <div class="floating-keywords">
+                <span>Build</span>
+                <span>•</span>
+                <span>Scale</span>
+                <span>•</span>
+                <span>Innovate</span>
+            </div>
             <div class="container">
                 <h1 class="section-title">Ventures & Initiatives</h1>
                 <p style="color: var(--text-dim); margin: 2rem 0 4rem; max-width: 600px;">A collection of companies and
@@ -39,6 +67,12 @@
             </div>
         </section>
     </main>
+
+    <!-- Sticky CTA -->
+    <div class="sticky-cta">
+        <a href="contact.html" class="btn btn-primary">Let's Collaborate</a>
+    </div>
+
     <footer>
         <div class="container">
             <p>&copy; 2026 Prakash. All rights reserved. Forward-thinking innovation.</p>

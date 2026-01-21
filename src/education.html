@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Education | Prakash - Lifelong Learning</title>
+    <meta name="description"
+        content="Educational journey of Prakash including formal degrees, certifications, and continuous learning in mechatronics and EV systems.">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/components.css">
+    <link rel="stylesheet" href="css/timeline.css">
+    <link rel="stylesheet" href="css/carousel.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+</head>
+
+<body class="dark-theme">
+    <nav id="navbar">
+        <div class="container">
+            <div class="logo"><a href="index.html" style="text-decoration: none; color: inherit;">PRAKASH</a></div>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="ventures.html">Ventures</a></li>
+                <li><a href="research.html">Research</a></li>
+                <li><a href="education.html">Education</a></li>
+                <li><a href="insights.html">Insights</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Mobile Navigation Overlay -->
+    <div class="mobile-nav-overlay">
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="ventures.html">Ventures</a></li>
+            <li><a href="research.html">Research</a></li>
+            <li><a href="education.html">Education</a></li>
+            <li><a href="insights.html">Insights</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </div>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="section" style="padding-top: 15rem;">
+            <div class="container">
+                <h1 class="section-title">Learning as a Lifelong System</h1>
+                <p
+                    style="color: var(--text-dim); margin: 2rem 0 4rem; max-width: 700px; font-size: 1.2rem; line-height: 1.8;">
+                    Education is not a destination but a continuous journey. Through formal degrees, professional
+                    certifications,
+                    and self-directed learning, I build multidisciplinary expertise to solve tomorrow's challenges
+                    today.
+                </p>
+            </div>
+        </section>
+
+        <!-- Formal Education Timeline -->
+        <section class="section bg-alt">
+            <div class="container">
+                <h2 class="section-title">Formal Education</h2>
+                <div class="timeline-container" id="education-timeline">
+                    <div class="timeline-line"></div>
+                    <!-- Timeline items will be populated via JS -->
+                </div>
+            </div>
+        </section>
+
+        <!-- Certifications Carousel -->
+        <section class="section">
+            <div class="container">
+                <h2 class="section-title">Certifications & Programs</h2>
+                <p style="color: var(--text-dim); margin-bottom: 3rem;">
+                    Continuous professional development through specialized courses and industry training.
+                </p>
+                <div class="carousel-container" id="certifications-carousel">
+                    <div class="carousel-wrapper">
+                        <!-- Carousel items will be populated via JS -->
+                    </div>
+                    <div class="carousel-controls">
+                        <button class="carousel-btn prev">←</button>
+                        <button class="carousel-btn next">→</button>
+                    </div>
+                    <div class="carousel-indicators">
+                        <!-- Indicators will be populated via JS -->
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Self-Learning & Research Domains -->
+        <section class="section bg-alt">
+            <div class="container">
+                <h2 class="section-title">Self-Learning & Research Domains</h2>
+                <p style="color: var(--text-dim); margin-bottom: 3rem;">
+                    Independent study across multidisciplinary fields to stay ahead of industry trends.
+                </p>
+                <div class="tag-cloud" id="learning-domains">
+                    <!-- Tags will be populated via JS -->
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Side Panel for Learning Domain Details -->
+    <div class="side-panel" id="domain-panel">
+        <button class="side-panel-close">×</button>
+        <div id="panel-content">
+            <!-- Content will be dynamically inserted -->
+        </div>
+    </div>
+
+    <!-- Sticky CTA -->
+    <div class="sticky-cta">
+        <a href="contact.html" class="btn btn-primary">Let's Collaborate</a>
+    </div>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2026 Prakash. All rights reserved. Forward-thinking innovation.</p>
+        </div>
+    </footer>
+
+    <script type="module" src="js/education.js"></script>
+</body>
+
+</html>

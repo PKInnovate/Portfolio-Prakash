@@ -1,8 +1,14 @@
 import { initAnimations, initNavbar, renderVentures, initMagneticButtons, initCursorGlow } from './ui.js';
+import { initNavigation, initStickyCTA, highlightActivePage } from './navigation.js';
+import { initModal, createVentureModal } from './modal.js';
+import { ventures } from './data.js';
 
 document.addEventListener('DOMContentLoaded', () => {
     // 1. Initialize Core Behaviors
     initCursorGlow();
+    initNavigation();
+    initStickyCTA();
+    highlightActivePage();
     initNavbar();
     initAnimations();
     initMagneticButtons();
@@ -16,6 +22,17 @@ document.addEventListener('DOMContentLoaded', () => {
         renderVentures(2); // Only show top 2 on home
     } else if (page === 'ventures.html') {
         renderVentures(); // Full list
+        initModal(); // Initialize modal for venture details
+
+        // Add click handlers for venture cards to open modals
+        setTimeout(() => {
+            document.querySelectorAll('.card-item').forEach((card, index) => {
+                card.style.cursor = 'pointer';
+                card.addEventListener('click', () => {
+                    createVentureModal(ventures[index]);
+                });
+            });
+        }, 100);
     }
 
 

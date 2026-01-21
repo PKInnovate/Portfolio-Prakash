@@ -4,9 +4,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Research | Prakash - Visionary Leader</title>
+    <title>Insights | Prakash - Thought Leadership</title>
+    <meta name="description"
+        content="Thought leadership and insights on EV systems, innovation, and systems thinking from Prakash.">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/components.css">
+    <link rel="stylesheet" href="css/carousel.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
@@ -47,34 +50,48 @@
             <li><a href="contact.html">Contact</a></li>
         </ul>
     </div>
+
     <main>
+        <!-- Hero Section -->
         <section class="section" style="padding-top: 15rem;">
             <div class="container">
-                <h1 class="section-title">Research & Innovation</h1>
-                <p style="color: var(--text-dim); margin: 2rem 0 4rem; max-width: 600px;">Leading research across the
-                    full
-                    lifecycle of EV subsystems, mechatronics integration, and automated validation frameworks.</p>
-                <div id="research-accordion">
-                    <!-- Research items will be populated via JS as accordions -->
-                    <div class="research-item">
-                        <div class="card-tag">R&D Domain</div>
-                        <h3>EV Battery Systems</h3>
-                        <p>Specializing in Li-ion pack validation (AIS-156), BMS development, thermal management, and
-                            swappable battery architectures for micro-mobility.</p>
+                <h1 class="section-title">Insights & Thought Leadership</h1>
+                <p
+                    style="color: var(--text-dim); margin: 2rem 0 4rem; max-width: 700px; font-size: 1.2rem; line-height: 1.8;">
+                    Exploring the intersection of technology, innovation, and systems thinking through essays and
+                    analysis.
+                </p>
+            </div>
+        </section>
+
+        <!-- Featured Insights -->
+        <section class="section bg-alt">
+            <div class="container">
+                <h2 class="section-title">Featured Insights</h2>
+                <div class="carousel-container" id="featured-insights">
+                    <div class="carousel-wrapper">
+                        <!-- Featured insights will be populated via JS -->
                     </div>
-                    <div class="research-item">
-                        <div class="card-tag">R&D Domain</div>
-                        <h3>System Architecture</h3>
-                        <p>Defining cross-functional engineering requirements across BMS, VCU, IoT, and chassis,
-                            ensuring
-                            seamless integration using V-Model and TRL frameworks.</p>
+                    <div class="carousel-controls">
+                        <button class="carousel-btn prev">←</button>
+                        <button class="carousel-btn next">→</button>
                     </div>
-                    <div class="research-item">
-                        <div class="card-tag">R&D Domain</div>
-                        <h3>Automation & Control</h3>
-                        <p>Developing control algorithms in MATLAB/Simulink and automated diagnostic benches using NI
-                            LabVIEW and Python to accelerate validation cycle times.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- All Insights Grid -->
+        <section class="section">
+            <div class="container">
+                <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 3rem;">
+                    <h2 class="section-title" style="margin: 0;">All Insights</h2>
+                    <div class="filter-tags" id="category-filters">
+                        <span class="tag active" data-category="all">All</span>
+                        <!-- Category filters will be populated via JS -->
                     </div>
+                </div>
+                <div class="research-grid" id="insights-grid">
+                    <!-- Insight cards will be populated via JS -->
                 </div>
             </div>
         </section>
@@ -91,7 +108,7 @@
         </div>
     </footer>
 
-    <script type="module" src="js/main.js"></script>
+    <script type="module" src="js/insights.js"></script>
 </body>
 
 </html>
