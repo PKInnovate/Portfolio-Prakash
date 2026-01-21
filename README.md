@@ -1,6 +1,8 @@
 # Portfolio - Prakash (Bhanu Prakash Chinnabban)
 
-**Live URL:** [https://pkinnovate.github.io/Portfolio-Prakash/](https://pkinnovate.github.io/Portfolio-Prakash/)
+> **🌐 VIEW LIVE WEBSITE:** [https://pkinnovate.github.io/Portfolio-Prakash/src/](https://pkinnovate.github.io/Portfolio-Prakash/src/)
+
+**Repository:** [https://github.com/PKInnovate/Portfolio-Prakash](https://github.com/PKInnovate/Portfolio-Prakash)
 
 A professional portfolio showcasing Bhanu Prakash Chinnabban's expertise in Mechatronics Engineering, EV Systems, and R&D Leadership. Features a **premium dark aesthetic** with advanced UI components including timelines, carousels, accordions, modals, and interactive navigation.
 
@@ -227,7 +229,9 @@ Portfolio/
 The site is deployed via GitHub Pages:
 1. Push changes to `main` branch
 2. GitHub Actions automatically deploys to live site
-3. Live URL: https://pkinnovate.github.io/Portfolio-Prakash/
+3. **Live URL:** https://pkinnovate.github.io/Portfolio-Prakash/src/
+
+**Note:** The site is served from the `/src/` directory. To access the portfolio, visit the URL above.
 
 ## 📈 Future Enhancements
 
